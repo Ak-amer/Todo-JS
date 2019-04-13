@@ -1,4 +1,38 @@
-// store and exesses the element that have id
+// store and access to the document elements that have id
 var taskInput = document.getElementById("task-input");
 var addButton = document.getElementById("add-task-but");
 var todoTask = document.getElementById("todo-list");
+
+//add event listener onto buttons
+addButton.addEventListener("click", function(){
+	addNewTask();
+});
+
+
+
+// in
+var todo-tasks =[];
+// generate new access value of inputs
+function addNewTask(){
+	var date = new Date();
+	var task = taskInput.value;
+	
+	//create an object for the list entry
+	var todo = {
+		id:todo-tasks.length +1,
+		task:task,
+		date: date.toUTCString(),
+		done: false
+	}
+	
+}
+//
+todo-tasks.push(todo.task);
+ //update the document state with new list
+ //
+ taskInput.value = ";
+ todo-tasks.forEach(function(item){
+	 todotask.appendChild("<p>" + item + "</p>");
+	 
+	 
+ });
