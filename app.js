@@ -6,11 +6,12 @@ var todoTask = document.getElementById("todo-list");
 //add event listener onto buttons
 addButton.addEventListener("click", function(){
 	addNewTask();
+	consle.log ("button Clicked");
 });
 
 
 
-// in
+// initialice
 var todo-tasks =[];
 // generate new access value of inputs
 function addNewTask(){
@@ -21,8 +22,9 @@ function addNewTask(){
 	var todo = {
 		id:todo-tasks.length +1,
 		task:task,
-		date: date.toUTCString(),
+		date: Date.toUTCString(),
 		done: false
+		consle.log ("task");
 	}
 	
 }
@@ -33,6 +35,6 @@ todo-tasks.push(todo.task);
  taskInput.value = ";
  todo-tasks.forEach(function(item){
 	 todotask.appendChild("<p>" + item + "</p>");
-	 
+	 consle.log ("todo-tasks");
 	 
  });
